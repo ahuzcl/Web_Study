@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>静态方法和实例方法</title>
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        //定义一个类
+        function AClass() {
+
+        }
+        //给这个类添加一个静态方法。
+        AClass.staticMethod=function () {
+
+                alert("staticMethod");
+
+        }
+        //给这个类添加一个实例方法
+
+        AClass.prototype.instanceMethod = function(){
+            alert("instanceMethod");
+        }
+
+        AClass.staticMethod();
+        var a = new AClass();
+        a.instanceMethod();
+       // AClass.prototype.instanceMethod();
+    </script>
+    
+</head>
+<body>
+
+
+</body>
+</html>

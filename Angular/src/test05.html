@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/angular.min.js"></script>
+</head>
+<body ng-init="arr=[{user:'cunliang',age:26},{user:'pangpang',age:3 }]">
+    <ul>
+        <li ng-repeat="item in arr"> 姓名:{{item.user}},年龄:{{item.age}}</li>
+    </ul>
+
+</body>
+</html>

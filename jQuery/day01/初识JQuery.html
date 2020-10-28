@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var $div1 = $("div")[0];
+            var $div2 = $(".box1")[0];
+            var $div3 = $("#box2")[0];
+            console.log($div1);
+            console.log($div2);
+            console.log($div3);
+        })
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+    <div class="box1"></div>
+    <div id="box2"></div>
+
+
+</body>
+</html>
