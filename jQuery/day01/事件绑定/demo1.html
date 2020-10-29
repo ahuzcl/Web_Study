@@ -8,6 +8,19 @@
             /**
              * jq的两种绑定事件方式。
              */
+            /*
+            $("button").click(function () {
+                alert("第一种方式");
+            });
+            $("button").on("click",function () {
+                alert("第二种方式")
+            });
+             */
+
+            $("input").on("blur",function () {
+                alert("sss");
+            })
+
 
         });
     </script>
@@ -16,5 +29,6 @@
 </head>
 <body>
     <button>我是按钮</button>
+    <input type="text">
 </body>
 </html>
