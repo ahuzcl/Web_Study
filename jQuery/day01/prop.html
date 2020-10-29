@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            console.log($("checkbox").prop("checked"));
+            console.log($("checkbox").attr("checked"));
+        });
+        /**
+         * prop和attr的不同：
+         * 如果使用prop可以返回true、false。
+         * 如果使用attr返回的是checked、undefined。
+         */
+    </script>
+
+</head>
+<body>
+<input type="checkbox"checked>
+</body>
+</html>

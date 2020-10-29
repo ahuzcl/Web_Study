@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>切换</title>
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            /**
+             * 给按钮添加点击事件
+             * 获取输入框中输入的内容
+             * 修改img中的src
+             */
+
+            var btn = document.getElementsByTagName("button")[0];
+            btn.onclick =function () {
+                var input = document.getElementsByTagName("input")[0];
+                var text = input.value;
+                $("img").attr("src",text);
+            }
+        });
+    </script>
+
+</head>
+<body>
+
+<input type="text">
+<button>切换图片</button><br>
+<img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="">
+
+
+</body>
+</html>

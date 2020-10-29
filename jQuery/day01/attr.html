@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            /**
+             * attr方法可以传递两个参数，也可以传递1个参数
+             * 传递一个参数代表获取属性节点的值:无论找到多少个元素都只会返回第一个元素指定的属性节点的值
+             * 传递两个参数代表设置属性节点的值:找到多少个都会全部设置！有则修改，无则增加。
+             */
+            console.log($("span").attr("class"));
+            console.log($("span").attr("class","box"));
+        });
+    </script>
+
+</head>
+<body>
+<span class="span1" name="cunliang" ></span>
+<span class="span2" name="pangpang"></span>
+</body>
+</html>
