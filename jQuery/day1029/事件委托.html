@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+
+            $("button").click(function () {
+                $("ul").append("<li>我是新增的li</li>")
+            });
+
+            /**
+             * 在jQuery中，如果通过核心函数找到的元素不止一个，那么在添加事件的
+             * 时候，jQuery会遍历找到所有的元素，给所有找到的元素添加事件。
+             * 如下例：通过ul下的子标签li，一共找到三个li。
+             */
+        /*    $("ul>li").click(function () {
+                console.log($(this).html());
+            });*/
+            /**
+             * 把事件委托给ul管理
+             */
+
+            $("ul").delegate("li","click",function () {
+                console.log($(this).html());
+            })
+
+
+        });
+    </script>
+
+
+</head>
+<body>
+    <ul>
+        <li>我是第1个li</li>
+        <li>我是第2个li</li>
+        <li>我是第3个li</li>
+    </ul>
+    <button>新增一个li</button>
+
+</body>
+</html>
