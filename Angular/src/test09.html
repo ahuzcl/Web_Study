@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="test1106">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script>
+        let mod = angular.module('test1106',[]);
+        mod.controller('main',function ($scope,$http) {
+            /**
+             * angular和JS是不互通的
+             * 基础知识
+             * angular的两大特性：
+             * 1.双向绑定：数据和UI界面的绑定
+             * $scope和HTML
+             *2.依赖注入（依赖反转）：
+             *函数有权利要求传入的参数么？
+             * $scope 依赖、依赖项，一个依赖可以操控一个功能
+             * 由controller决定依赖项
+             * 属性： 指令 ng-model
+             * 参数：依赖  $
+             */
+
+            console.log(arguments.length);
+
+
+        });
+    </script>
+
+</head>
+<body ng-controller="main">
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="text_ajax">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/angular.min.js"></script>
+    <script>
+
+        let mod = angular.module('text_ajax',[]);
+        mod.controller('main',function ($scope,$http) {
+
+            $http.get('arr.txt').then(
+                (res)=>{
+                    alert(res.data);
+                },
+                (err)=>{
+                    alert("error");
+                }
+            );
+        })
+
+    </script>
+</head>
+<body ng-controller="main">
+<ul>
+    <li ng-repeat="a in arr">{{a}}</li>
+</ul>
+
+</body>
+</html>
